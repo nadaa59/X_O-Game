@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(184, 200, 230);
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+    margin:auto;
+    position: fixed;
+    z-index: 3;
+    flex-wrap:wrap;
+    background-color: cornflowerblue;
+    
+}
+header .container h1{
+    font-size: 40px;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header .container span{
+    margin-right: 30px;
+    
+}
+
+header .container nav{
+    flex-wrap: wrap;
+}
+header .container nav ul{
+    
+    display:flex;
+    margin-top:-20px;
+}
+header .container nav ul li{
+    margin:10px;
+    list-style: none;
+    margin-top: 22px;
+    padding: 5px;
+    
+}
+
+header .container nav ul li a{
+    
+    text-decoration: none;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    
+}
+header .container nav ul li a:hover{
+    color:white;
+
+}
+
+header .container nav ul li button{
+    background-color:transparent;
+    border: none;
+    font-size: 22px;
+}
+header .container button:hover{
+    color:red;
+
+}
+
+
+
+
+
+.game {
+    text-align: center;
+    width:350px;
+    height:400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    float:right;
+    background-color: black;
+    color:white;
+    margin: 5px;
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+@media (max-width:767px){
+    header .game .title{
+        flex-wrap: wrap;
+        margin-top: 50px;   
+    }
+}
